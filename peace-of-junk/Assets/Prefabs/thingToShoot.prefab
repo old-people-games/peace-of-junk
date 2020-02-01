@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2664979683370816272}
   - component: {fileID: 6912467636852921026}
   - component: {fileID: 6613530511232354638}
+  - component: {fileID: 8291455115684119296}
+  - component: {fileID: 5715777483178378831}
   m_Layer: 0
   m_Name: thingToShoot
   m_TagString: Untagged
@@ -117,3 +119,31 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!58 &8291455115684119296
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554811445657810352}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.6
+--- !u!114 &5715777483178378831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554811445657810352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12def90e1c6330599aade8b570e98dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
