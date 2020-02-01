@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -41,6 +42,11 @@ public class CharacterController : MonoBehaviour
 
         float moveHorizontal = Input.GetAxis("Horizontal");
 
+        if (moveHorizontal == 0f)
+        {
+            rb2d.inertia = 0;
+        }
+
         if (Input.GetButton("Jump") && _jumpForce <= maxJumpAmount)
         {
             _jumpForce += jumpAddedByHolding;
@@ -53,7 +59,6 @@ public class CharacterController : MonoBehaviour
         }
 
         Vector2 movement = new Vector2(moveHorizontal, 0);
-
-        rb2d.AddRelativeForce(movement * speed, ForceMode2D.Force);
-    }
+         rb2d.AddRelativeForce(movement * speed);
+         }
 }
