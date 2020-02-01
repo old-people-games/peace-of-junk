@@ -42,7 +42,15 @@ public class CharacterController : MonoBehaviour
 
         float moveHorizontal = Input.GetAxis("Horizontal");
 
-        transform.localScale = moveHorizontal < 0 ? new Vector3(-1, 1, 1) : new Vector3(1, 1, 1);
+        if (collider.IsTouching(_platformCollision.collider) && moveHorizontal < -0.2f)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+
+        if (collider.IsTouching(_platformCollision.collider) && moveHorizontal > 0.2f)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
 
 
         if (collider.IsTouching(_platformCollision.collider) && Input.GetButtonUp("Jump") && _jumpForce > 0)
