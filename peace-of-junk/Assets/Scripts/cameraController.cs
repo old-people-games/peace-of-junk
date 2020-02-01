@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class cameraController : MonoBehaviour
 {
-    public Transform playerTransform;
+    [FormerlySerializedAs("playerTransform")] public Transform targetTransform;
     public Transform cameraTransform;
     public Vector3 cameraOffset;
     public bool focusOnPlayer;
@@ -18,15 +19,26 @@ public class cameraController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    public void RemoveCameraTarget()
+    {
+        targetTransform = null;
+        focusOnPlayer = false;
+    }
+
+    public void AssignCamera(Transform transform)
+    {
+        targetTransform = transform;
+        focusOnPlayer = true;
+    }
+
     void LateUpdate()
     {
-        if (!focusOnPlayer)
+        if (!focusOnPlayer && targetTransform == null)
         {
             return;
         }
 
-        cameraTransform.position = Vector3.Lerp(cameraTransform.position, playerTransform.position + cameraOffset,
+        cameraTransform.position = Vector3.Lerp(cameraTransform.position, targetTransform.position + cameraOffset,
             CameraSpeed * Time.deltaTime);
     }
 }
