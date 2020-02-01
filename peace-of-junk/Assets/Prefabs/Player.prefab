@@ -591,6 +591,12 @@ MonoBehaviour:
   MaxSpeed: 30
   jumpAddedByHolding: 10
   maxJumpAmount: 300
+  bodyParts:
+  - {fileID: 1552702522869074576}
+  - {fileID: 1694642827074720384}
+  - {fileID: 2634783537417340848}
+  - {fileID: 4659990440996030696}
+  - {fileID: 6936611335330855404}
 --- !u!61 &5182190694053051607
 BoxCollider2D:
   m_ObjectHideFlags: 0
