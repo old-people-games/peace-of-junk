@@ -14,11 +14,22 @@ public class CharacterController : MonoBehaviour
     private BoxCollider2D collider;
     private Collision2D _platformCollision;
 
+    public GameObject[] bodyParts;
+
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         collider = GetComponent<BoxCollider2D>();
+    }
+
+    public void Die()
+    {
+        foreach (var part in bodyParts)
+        {
+            var rigidbody = part.AddComponent(typeof(Rigidbody2D)) as Rigidbody2D;
+            var collider = part.AddComponent(typeof(CircleCollider2D)) as CircleCollider2D;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
