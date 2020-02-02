@@ -15,13 +15,14 @@ public class Scrip : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (DestroyOnFloorTouch && other != null && !other.CompareTag("Platform"))
+        if (DestroyOnFloorTouch  && other.CompareTag("Platform"))
         {
-            destroyObject();
+            Lifetime = 0;
+            StartCoroutine(destroyObject());
             return;
         }
 
-        if (other != null && !other.CompareTag("Player"))
+        if (!other.CompareTag("Player"))
         {
             return;
         }
