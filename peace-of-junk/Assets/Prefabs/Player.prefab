@@ -593,6 +593,9 @@ MonoBehaviour:
   audioSource: {fileID: -2727235187632975960}
   jumpSound: {fileID: 8300000, guid: 45d84f45b8af4bd43b25e1f56afa60be, type: 3}
   deathSound: {fileID: 8300000, guid: 853387099a073f74481db5e55166bc21, type: 3}
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!50 &5182190694053051606
 Rigidbody2D:
   serializedVersion: 4

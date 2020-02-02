@@ -30,9 +30,14 @@ public class CharacterController : MonoBehaviour
     public AudioSource audioSource;
     [Header("AudioClips")] public AudioClip jumpSound;
     public AudioClip deathSound;
+    private ContactFilter2D _contactFilter;
+    public LayerMask _layerMask;
 
     void Start()
     {
+        _contactFilter = new ContactFilter2D();
+        _contactFilter.useLayerMask = true;
+        _contactFilter.SetLayerMask(_layerMask);
         rb2d = GetComponent<Rigidbody2D>();
         _collider = GetComponent<CapsuleCollider2D>();
         audioSource = GetComponent<AudioSource>();
@@ -119,8 +124,7 @@ public class CharacterController : MonoBehaviour
         }
 
 
-        if (
-            Input.GetButtonUp("Jump") && _jumpForce > 0)
+        if (Input.GetButtonUp("Jump") && _jumpForce > 0 && rb2d.IsTouching(_contactFilter))
         {
             rb2d.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
             animator.SetBool("BeforeJump", false);
