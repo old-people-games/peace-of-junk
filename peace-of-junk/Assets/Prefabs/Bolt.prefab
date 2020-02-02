@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2424476819417996478}
   - component: {fileID: 3657470834116176909}
   - component: {fileID: 478067943956868455}
-  - component: {fileID: 969763779389744103}
+  - component: {fileID: 4921916546162898696}
   m_Layer: 0
   m_Name: Bolt
   m_TagString: Platform
@@ -140,8 +140,8 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 12.15
---- !u!58 &969763779389744103
-CircleCollider2D:
+--- !u!61 &4921916546162898696
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -154,5 +154,15 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 41.530003, y: 36.156246}
+    newSize: {x: 41.530003, y: 36.156246}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 21.2
+  m_Size: {x: 41.530003, y: 36.156246}
+  m_EdgeRadius: 0
