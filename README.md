@@ -3,4 +3,6 @@ The Bird And The Beard is a platformer game of an old man making his journey to 
 
 Made for [Global Game Jam 2020](https://globalgamejam.org).   
 
-Downloadable files (windows and linux): https://oldpeoplegames.itch.io/bird-and-the-beard.
+Downloadable files (windows and linux): https://oldpeoplegames.itch.io/bird-and-the-beard.  
+
+![game banner](/promo/game_banner.png)
