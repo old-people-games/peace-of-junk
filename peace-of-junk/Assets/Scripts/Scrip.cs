@@ -55,7 +55,7 @@ public class Scrip : MonoBehaviour
     public void Activate(float AngularSpeed)
     {
         ActivateOnTigger = true;
-        rigidbody.velocity = new Vector2(AngularSpeed, 0f);
+        if (rigidbody != null) rigidbody.velocity = new Vector2(AngularSpeed, 0f);
         StartCoroutine(destroyObject());
     }
 
