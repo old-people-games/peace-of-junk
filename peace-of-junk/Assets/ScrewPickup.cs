@@ -7,6 +7,7 @@ public class ScrewPickup : MonoBehaviour
 {
     public GameObject ParticleEffect;
     public SpawnPoint SpawnPoint;
+    public AudioSource audio;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player"))
@@ -14,8 +15,13 @@ public class ScrewPickup : MonoBehaviour
             return;
         }
 
-        Instantiate(ParticleEffect, transform.position, transform.rotation);
-        SpawnPoint.SetSpawn(transform);
-        Destroy(gameObject);
+        
+        var position = transform.position;
+        Instantiate(ParticleEffect, position, transform.rotation);
+        GameObject spawn = Instantiate(new GameObject("spawnpoint"));
+        spawn.transform.position = position;
+        SpawnPoint.SetSpawn(spawn.transform);
+        audio.Play();
+        Destroy(gameObject, 0.7f);
     }
 }

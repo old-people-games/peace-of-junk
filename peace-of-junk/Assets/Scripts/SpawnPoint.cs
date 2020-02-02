@@ -15,8 +15,6 @@ public class SpawnPoint : MonoBehaviour
    public void SetSpawn(Transform newSpawn)
    {
        UiManager.pickupScrew();
-       GameObject newObject = new GameObject();
-       newObject.transform.position = newSpawn.position;
-       spawnPoint = newObject.transform;
+       spawnPoint = newSpawn;
    }
 }
