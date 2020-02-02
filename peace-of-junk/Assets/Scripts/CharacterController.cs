@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Debug = System.Diagnostics.Debug;
+//using Debug = System.Diagnostics.Debug;
+using System.Collections;
 
 public class CharacterController : MonoBehaviour
 {
@@ -92,7 +93,7 @@ public class CharacterController : MonoBehaviour
         _platformRoutine = null;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (_platformCollision == null)
         {
@@ -123,9 +124,13 @@ public class CharacterController : MonoBehaviour
             _platformRoutine = StartCoroutine(FallThroughPlatform(_platformCollision.collider));
         }
 
+        if(Input.GetButtonUp("Jump")){
+            Debug.Log("ATTEMPTING TO JUMP \n JUMPING WITH " + _jumpForce + " _jumpForce");
+        }
 
         if (Input.GetButtonUp("Jump") && _jumpForce > 0 && rb2d.IsTouching(_contactFilter))
         {
+ 
             rb2d.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
             animator.SetBool("BeforeJump", false);
             animator.SetBool("Jumping", true);
@@ -142,6 +147,7 @@ public class CharacterController : MonoBehaviour
 
         if (Input.GetButton("Jump"))
         {
+            rb2d.velocity = new Vector2(0,0);
             return;
         }
 
