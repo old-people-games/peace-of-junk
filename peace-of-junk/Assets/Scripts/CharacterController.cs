@@ -100,7 +100,7 @@ public class CharacterController : MonoBehaviour
 
         animator.SetFloat("WalkSpeed", 0);
         Debug.Assert(_platformCollision.collider != null, "_platformCollision.collider != null");
-        if (_collider.IsTouching(_platformCollision.collider) && moveHorizontal < -0.3f)
+        if (_collider != null && (_collider.IsTouching(_platformCollision.collider) && moveHorizontal < -0.3f))
         {
             transform.localScale = new Vector3(-1, 1, 1);
             animator.SetFloat("WalkSpeed", -moveHorizontal);
@@ -120,8 +120,7 @@ public class CharacterController : MonoBehaviour
 
 
         if (
-            (_collider.IsTouching(_platformCollision.collider) ||
-             _collider.IsTouching(_previousCollision.collider)) && Input.GetButtonUp("Jump") && _jumpForce > 0)
+            Input.GetButtonUp("Jump") && _jumpForce > 0)
         {
             rb2d.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
             animator.SetBool("BeforeJump", false);

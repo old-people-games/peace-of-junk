@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01c75bdd-0256-4eb9-8d03-2d3c48d57579" name="Default Changelist" comment="" />
+    <list default="true" id="01c75bdd-0256-4eb9-8d03-2d3c48d57579" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.peace-of-junk/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.peace-of-junk/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.peace-of-junk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.peace-of-junk/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/png/saw_bw.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/png/saw_bw.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,10 +18,21 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42FCC02F-EDE7-44D6-A4C9-920C103DDAD8/05/ad6f14fe/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scrip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/cameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/a2/7a6642b3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/cameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/SpawnPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/cameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/shooter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scrip.cs" />
+        <option value="$PROJECT_DIR$/Assets/TireTrap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scrip.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" />
       </list>
     </option>
@@ -69,7 +86,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580555185690</updated>
-      <workItem from="1580555192805" duration="3112000" />
+      <workItem from="1580555192805" duration="5178000" />
+      <workItem from="1580562186245" duration="25522000" />
     </task>
     <servers />
   </component>
@@ -83,10 +101,18 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="687" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1580577084755">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="687" y="245" width="672" height="678" key="search.everywhere.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1580577084755" />
   </component>
 </project>
