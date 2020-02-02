@@ -13,9 +13,22 @@ public class Scrip : MonoBehaviour
     public bool DestroyOnFloorTouch;
     public bool ActivateOnTigger;
 
+    private void Start()
+    {
+        if (rigidbody == null)
+        {
+            rigidbody = GetComponent<Rigidbody2D>();
+        }
+
+        if (!ActivateOnTigger)
+        {
+            StartCoroutine(destroyObject());
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (DestroyOnFloorTouch  && other.CompareTag("Platform"))
+        if (DestroyOnFloorTouch && other.CompareTag("Platform"))
         {
             Lifetime = 0;
             StartCoroutine(destroyObject());
@@ -46,14 +59,6 @@ public class Scrip : MonoBehaviour
         StartCoroutine(destroyObject());
     }
 
-
-    private void Start()
-    {
-        if (!ActivateOnTigger)
-        {
-            StartCoroutine(destroyObject());
-        }
-    }
 
     private void Update()
     {
