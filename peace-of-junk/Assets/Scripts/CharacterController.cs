@@ -123,11 +123,7 @@ public class CharacterController : MonoBehaviour
         {
             _platformRoutine = StartCoroutine(FallThroughPlatform(_platformCollision.collider));
         }
-
-        if(Input.GetButtonUp("Jump")){
-            Debug.Log("ATTEMPTING TO JUMP \n JUMPING WITH " + _jumpForce + " _jumpForce");
-        }
-
+        
         if (Input.GetButtonUp("Jump") && _jumpForce > 0 && rb2d.IsTouching(_contactFilter))
         {
  
