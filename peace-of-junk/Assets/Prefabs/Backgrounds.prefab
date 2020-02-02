@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5717378604535035267}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -119.66, y: 0, z: 0}
-  m_LocalScale: {x: 9.43327, y: 453.15195, z: 1}
+  m_LocalPosition: {x: -119.66, y: 268.25, z: 0}
+  m_LocalScale: {x: 9.43327, y: 986.9581, z: 1}
   m_Children: []
   m_Father: {fileID: 5717378605281321794}
   m_RootOrder: 0
@@ -132,8 +132,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5717378604746066507}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.43327, y: 453.15195, z: 1}
+  m_LocalPosition: {x: 0, y: 268.25, z: 0}
+  m_LocalScale: {x: 9.43327, y: 986.9581, z: 1}
   m_Children: []
   m_Father: {fileID: 5717378605281321794}
   m_RootOrder: 1
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 5717378605281321794}
   m_Layer: 0
   m_Name: Backgrounds
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -270,8 +270,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5717378605479305416}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.100006, y: -8.852005, z: 1}
-  m_LocalScale: {x: 13.494, y: 13.494, z: 13.494}
+  m_LocalPosition: {x: -13.100006, y: 145.47, z: 1}
+  m_LocalScale: {x: 13.494, y: 21.05064, z: 13.494}
   m_Children: []
   m_Father: {fileID: 5717378605281321794}
   m_RootOrder: 3
@@ -350,8 +350,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5717378605635980689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -59.710007, y: -22.772003, z: 1}
-  m_LocalScale: {x: 22.48613, y: 10.2, z: 10}
+  m_LocalPosition: {x: -59.710007, y: 171.64, z: 1}
+  m_LocalScale: {x: 22.48613, y: 19.788, z: 10}
   m_Children: []
   m_Father: {fileID: 5717378605281321794}
   m_RootOrder: 2
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 5717378605863766396}
   - component: {fileID: 5717378605863766397}
   - component: {fileID: 5717378605863766387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: earth
   m_TagString: Ground
   m_Icon: {fileID: 0}
